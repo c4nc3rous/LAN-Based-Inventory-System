@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B410E76-B6A8-4621-BD46-062DFBAF6958}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>REDBERG_SYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>REDBERG_SYSTEM</RootNamespace>
+    <AssemblyName>REDBERG SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>REDBERG SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>REDBERG SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Capture-removebg-preview.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Google.Apis, Version=1.69.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.1.69.0\lib\net462\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.69.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Auth.1.69.0\lib\net462\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.69.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Core.1.69.0\lib\net462\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v3, Version=1.69.0.3703, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Drive.v3.1.69.0.3703\lib\net462\Google.Apis.Drive.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=9.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 9.1\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.1.1\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.6.2\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bin\Debug\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bin\Debug\DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.vb" />
+    <Compile Include="Login\Code.Designer.vb">
+      <DependentUpon>Code.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Code.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\CrystalReportData.Designer.vb">
+      <DependentUpon>CrystalReportData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\CrystalReportData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DashboardAccounts.Designer.vb">
+      <DependentUpon>DashboardAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DashboardAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DashboardActivity.Designer.vb">
+      <DependentUpon>DashboardActivity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DashboardActivity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DashboardForms.Designer.vb">
+      <DependentUpon>DashboardForms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DashboardForms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DashboardManage.Designer.vb">
+      <DependentUpon>DashboardManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DashboardManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DashboardOutTransact.Designer.vb">
+      <DependentUpon>DashboardOutTransact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DashboardOutTransact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DashboardReports.Designer.vb">
+      <DependentUpon>DashboardReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DashboardReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DashboardSettings.Designer.vb">
+      <DependentUpon>DashboardSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DashboardSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DashboardTeamList.Designer.vb">
+      <DependentUpon>DashboardTeamList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DashboardTeamList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DashboardTransactions.Designer.vb">
+      <DependentUpon>DashboardTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DashboardTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ManageAccounts.Designer.vb">
+      <DependentUpon>ManageAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ManageAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ManageAdd.Designer.vb">
+      <DependentUpon>ManageAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ManageAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ManageAddReport.Designer.vb">
+      <DependentUpon>ManageAddReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ManageAddReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ManageOutTransact.Designer.vb">
+      <DependentUpon>ManageOutTransact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ManageOutTransact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ManageProduct.Designer.vb">
+      <DependentUpon>ManageProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ManageProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ManageTransact.Designer.vb">
+      <DependentUpon>ManageTransact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ManageTransact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bin\Debug\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Code.resx">
+      <DependentUpon>Code.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\CrystalReportData.resx">
+      <DependentUpon>CrystalReportData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\DashboardAccounts.resx">
+      <DependentUpon>DashboardAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\DashboardActivity.resx">
+      <DependentUpon>DashboardActivity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\DashboardForms.resx">
+      <DependentUpon>DashboardForms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\DashboardManage.resx">
+      <DependentUpon>DashboardManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\DashboardOutTransact.resx">
+      <DependentUpon>DashboardOutTransact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\DashboardReports.resx">
+      <DependentUpon>DashboardReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\DashboardSettings.resx">
+      <DependentUpon>DashboardSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\DashboardTeamList.resx">
+      <DependentUpon>DashboardTeamList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\DashboardTransactions.resx">
+      <DependentUpon>DashboardTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ManageAccounts.resx">
+      <DependentUpon>ManageAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ManageAdd.resx">
+      <DependentUpon>ManageAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ManageAddReport.resx">
+      <DependentUpon>ManageAddReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ManageOutTransact.resx">
+      <DependentUpon>ManageOutTransact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ManageProduct.resx">
+      <DependentUpon>ManageProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ManageTransact.resx">
+      <DependentUpon>ManageTransact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bin\Debug\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="bin\Debug\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bin\Debug\REDBERG SYSTEM.exe.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoDashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoManage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoTransactions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoAccounts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoReports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Guna.UI2.dll" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Content Include="bin\Debug\REDBERG SYSTEM.exe" />
+    <Content Include="bin\Debug\REDBERG SYSTEM.pdb" />
+    <Content Include="bin\Debug\REDBERG SYSTEM.xml" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="Capture-removebg-preview.ico" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\activity.png" />
+    <None Include="Resources\IconR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
